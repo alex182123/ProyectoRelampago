@@ -35,7 +35,7 @@
                                 <h6>
                                 <i class="bi bi-list-ul"></i>
                                     </h6>
-                                
+                                    
                                     <h6>
                                         Factores
                                     </h6>

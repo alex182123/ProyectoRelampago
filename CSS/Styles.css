@@ -1,3 +1,24 @@
 body{
     background-color: #E3E8F0;
 }
+/* Estilo para las etiquetas de input */
+.txt-angel {
+border: 2px solid #A5C0ED; /* Borde con el color especificado */
+box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Sombra con un estilo suave */
+padding: 10px; /* Agregar un poco de espacio interno para que se vean mejor */
+transition: all 0.3s ease-in-out; /* Agregar una animación suave para cuando se les da hover */
+}
+/* Estilo para cuando se les da hover */
+.txt-angel:hover {
+border: 2px solid #4F87FF; /* Cambiar el color del borde cuando se les da hover */
+box-shadow: 2px 2px 5px rgba(0,0,0,0.4); /* Hacer la sombra un poco más oscura */
+}
+
+.texto-verde{
+    color: green;
+    font-weight: bold;
+}
+.texto-rojo{
+    color: red;
+    font-weight: bold;
+}
