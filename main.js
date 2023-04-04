@@ -15,16 +15,15 @@ function Login() {
             // La respuesta de la petición se almacena en la variable "response"
 
             // Puedes hacer lo que necesites con la respuesta, como redirigir a otra página
-            if (response == "1") {
+            if (response != 'false') {
                 Swal.fire({
                     icon: 'success',
                     title: 'Bienvenido!',
                     showConfirmButton: false
                 })
                 setTimeout(function () {
-                    window.location.href = "Views/Index.php";
+                    window.location.href = "Views/Index.php?ID=" + response;
                 }, 3000);
-
             } else {
                 Swal.fire({
                     icon: 'error',

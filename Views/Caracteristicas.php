@@ -1,3 +1,5 @@
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,193 +22,73 @@
             <div class="h4 pb-2 my-4 mx-5 text-black border-bottom border-primary ">
                 Caracteristicas
             </div>
-            <div class="text-center">
-                <div class="mb-3 item" style="width: 50%; margin: auto;">
-                    <label for="txt-caracteristica" id="txt-caracteristica" class="form-label">Caracteristica</label>
-                    <input type="text" class="form-control txt-angel" id="txt-caracteristica">
-                </div>
-                <div class="h4 pb-2 my-4 mx-5 text-black border-bottom border-danger text-center">
-                    Ideas <i class="bi bi-lightbulb"></i>
-                </div>
-                <div class="row">
-                    <div class="col mb-3">
-                        <label for="txt-caracteristica" id="txt-caracteristica" class="form-label">Idea 1</label>
-                        <input type="text" class="form-control txt-angel" id="txt-caracteristica">
-                    </div>
-                    <div class="col mb-3">
-                        <label for="txt-caracteristica" id="txt-caracteristica" class="form-label">Idea 2</label>
-                        <input type="text" class="form-control txt-angel" id="txt-caracteristica">
-                    </div>
-                    <div class="col mb-3">
-                        <label for="txt-caracteristica" id="txt-caracteristica" class="form-label">Idea 3</label>
-                        <input type="text" class="form-control txt-angel" id="txt-caracteristica">
+            <div class="row">
+                <div class="col-5 border-end border-primary" style="margin: auto;">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <label for="txt-caracteristica" id="txt-caracteristica"
+                                class="form-label">Caracteristica</label>
+                            <input type="text" class="form-control txt-angel" id="caracteristica">
+                        </div>
                     </div>
                 </div>
-
+                <div class="col-7">
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <label for="txt-caracteristica" id="txt-caracteristica" class="form-label">Idea 1</label>
+                            <input type="text" class="form-control txt-angel" id="txt-idea-1">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <label for="txt-caracteristica" id="txt-caracteristica" class="form-label">Idea 2</label>
+                            <input type="text" class="form-control txt-angel" id="txt-idea-2">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="mb-3">
+                            <label for="txt-caracteristica" id="txt-caracteristica" class="form-label">Idea 3</label>
+                            <input type="text" class="form-control txt-angel" id="txt-idea-3">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="table-responsive text-center">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th style="background-color: #FFE699;">
-                                <h6>
-                                    <i class="bi bi-building"></i>
-                                </h6>
-                                <h6>
-                                    Politico
-                                </h6>
-                            </th>
-                            <th style="background-color: #F7CE90;">
-                                <h6>
-                                    <i class="bi bi-cash"></i>
-                                </h6>
-                                <h6>
-                                    Economico
-                                </h6>
-                            </th>
-                            <th style="background-color: #E7B8B8;">
-                                <h6>
-                                    <i class="bi bi-people"></i>
-                                </h6>
-                                <h6>
-                                    Social
-                                </h6>
-                            </th>
-                            <th style="background-color: #BDD7EE;">
-                                <h6>
-                                    <i class="bi bi-cpu"></i>
-                                </h6>
-                                <h6>
-                                    Tecnologico
-                                </h6>
-                            </th>
-                            <th style="background-color: #B6D7A8;">
-                                <h6>
-                                    <i class="bi bi-tree"></i>
-                                </h6>
-                                <h6>
-                                    Ecologico
-                                </h6>
-                            </th>
-                            <th style="background-color: #F5DEB3;">
-                                <h6>
-                                    <i class="bi-file-earmark-text"></i>
-                                </h6>
-                                <h6>
-                                    Legal
-                                </h6>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody style="background-color: white;">
-                        <tr>
-                            <td>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="option1">
-                                    <label class="form-check-label texto-verde" for="inlineRadio1">Positivo <i
-                                            class="bi bi-plus-square"></i></label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="option2">
-                                    <label class="form-check-label texto-rojo" for="inlineRadio2">Negativo <i
-                                            class="bi bi-dash-square"></i></label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="option1">
-                                    <label class="form-check-label texto-verde" for="inlineRadio1">Positivo <i
-                                            class="bi bi-plus-square"></i></label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="option2">
-                                    <label class="form-check-label texto-rojo" for="inlineRadio2">Negativo <i
-                                            class="bi bi-dash-square"></i></label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="option1">
-                                    <label class="form-check-label texto-verde" for="inlineRadio1">Positivo <i
-                                            class="bi bi-plus-square"></i></label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="option2">
-                                    <label class="form-check-label texto-rojo" for="inlineRadio2">Negativo <i
-                                            class="bi bi-dash-square"></i></label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="option1">
-                                    <label class="form-check-label texto-verde" for="inlineRadio1">Positivo <i
-                                            class="bi bi-plus-square"></i></label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="option2">
-                                    <label class="form-check-label texto-rojo" for="inlineRadio2">Negativo <i
-                                            class="bi bi-dash-square"></i></label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="option1">
-                                    <label class="form-check-label texto-verde" for="inlineRadio1">Positivo <i
-                                            class="bi bi-plus-square"></i></label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="option2">
-                                    <label class="form-check-label texto-rojo" for="inlineRadio2">Negativo <i
-                                            class="bi bi-dash-square"></i></label>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio1" value="option1">
-                                    <label class="form-check-label texto-verde" for="inlineRadio1">Positivo <i
-                                            class="bi bi-plus-square"></i></label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                        id="inlineRadio2" value="option2">
-                                    <label class="form-check-label texto-rojo" for="inlineRadio2">Negativo <i
-                                            class="bi bi-dash-square"></i></label>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="my-3">
+                <button type="button" id="btn-cancelar" class="btn btn-danger">Cancelar</button>
+                <button type="button" id="btn-siguiente" class="btn btn-primary">Siguiente</button>
             </div>
-            <div class="form-floating mb-3">
-                <textarea class="form-control" placeholder="Escribe aquí" id="exampleFormControlTextarea1"></textarea>
-                <label for="exampleFormControlTextarea1">Comentario</label>
-            </div>
-            <div class="my-5">
-                <button type="button" class="btn btn-danger">Cancelar</button>
-                <button type="button" class="btn btn-primary">Enviar</button>
-            </div>
-
         </div>
-    </div>
-    <!-- Footer section -->
-    <?php include("../Includes/Footer.php"); ?>
-    <script>
-        $('#btn-CerrarSesion').click(function () {
-            window.location.href = "../Index.php";
-        });
-    </script>
-    <script src="main.js"></script>
+        <!-- Footer section -->
+        <?php include("../Includes/Footer.php"); ?>
+        <script>
+            $('#btn-CerrarSesion').click(function () {
+                window.location.href = "../Index.php";
+            });
+            $('#btn-cancelar').click(function () {
+                const urlParams = new URLSearchParams(window.location.search);
+                const id = urlParams.get('ID');
+                window.location.href = "Index.php?ID=" + id;
+            });
+            $('#btn-siguiente').click(function () {
+                const urlParams = new URLSearchParams(window.location.search);
+                const id = urlParams.get('ID');
+                var caracteristica = $("#caracteristica").val().trim();
+                var idea1 = $("#txt-idea-1").val().trim();
+                var idea2 = $("#txt-idea-2").val().trim();
+                var idea3 = $("#txt-idea-3").val().trim();
+                    if (caracteristica === "" || idea1 === "" || idea2 === "" || idea3 === "") {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Por favor, complete todos los campos.!',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
+                    } else {
+                        window.location.href = "../Views/Factores.php?ID=" + id + "&Carac=" + caracteristica + "&Idea1=" + idea1 + "&idea2=" + idea2 + "&idea3=" + idea3;
+                    }
+                });
+        </script>
+        <script src="main.js"></script>
 </body>
 
 </html>

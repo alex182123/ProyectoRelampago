@@ -9,6 +9,7 @@
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../CSS/Styles.css">
+    <link rel="stylesheet" href="../CSS/Styles.css">
     <title>Caracteristicas | Proyecto Relampago</title>
 </head>
 
@@ -32,17 +33,17 @@
                         <thead>
                             <tr>
                                 <th>
-                                <h6>
-                                <i class="bi bi-list-ul"></i>
+                                    <h6>
+                                        <i class="bi bi-list-ul"></i>
                                     </h6>
-                                    
+
                                     <h6>
                                         Factores
                                     </h6>
                                 </th>
                                 <th>
                                     <h6>
-                                    <i class="bi bi-search"></i>
+                                        <i class="bi bi-search"></i>
                                     </h6>
                                     <h6>
                                         Clasificacion del factor
@@ -98,14 +99,6 @@
                                 </th>
                                 <th>
                                     <h6>
-                                        <i class="bi bi-chat-left-text"></i>
-                                    </h6>
-                                    <h6>
-                                        Comentario
-                                    </h6>
-                                </th>
-                                <th>
-                                    <h6>
                                         <i class="bi bi-gear-wide-connected"></i>
                                     </h6>
                                     <h6>
@@ -114,11 +107,30 @@
                                 </th>
                             </tr>
                         </thead>
+                        <tbody id='cuerpo'>
                     </table>
                 </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #A5C0ED;">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Detalles</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="modbody" class="text-center">
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Footer section -->
     <?php include("../Includes/Footer.php"); ?>
     <script>
@@ -126,7 +138,29 @@
             window.location.href = "../Index.php";
         });
         $('#btn-AgregarIdea').click(function () {
-            window.location.href = "../Views/Caracteristicas.php";
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('ID');
+            window.location.href = "../Views/Caracteristicas.php?ID=" + id;
+        });
+        $(document).ready(function () {
+            setInterval(function () {
+                const urlParams = new URLSearchParams(window.location.search);
+                const id = urlParams.get('ID');
+                $.ajax({
+                    url: '../Class/Database/Consultas.php',
+                    method: 'POST',
+                    data: {
+                        ID: id,
+                        ConsultarCaracteristicas: '1'
+                    },
+                    success: function (data) {
+                        $('#cuerpo').html(data);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.log(textStatus, errorThrown);
+                    }
+                });
+            }, 5000);
         });
     </script>
     <script src="main.js"></script>
